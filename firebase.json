@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/job-Application-pv",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
