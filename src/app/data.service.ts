@@ -9,14 +9,18 @@ import { Store } from './store';
 })
 export class DataService {
 
-  baseURL = environment.mapbox.accessToken;
+  baseURL = environment.apiURL
 
   constructor(private http: HttpClient) { }
   
   getStore(): Observable<Store[]> {
 
     const url = this.baseURL;
+    console.log(url)
      return this.http.get<Store[]>(url);
+
+
+
      
   }
 }
